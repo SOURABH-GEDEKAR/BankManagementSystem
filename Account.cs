@@ -18,8 +18,22 @@ namespace BankManagementSystem
             Console.WriteLine("Balance: " + Balance);
         }
 
-        public abstract void Deposite(double amount);
+        public abstract void Deposite(double amount);  
         public abstract void Withdraw(double amount);
+
+        public Account()
+        {
+
+        }
+       public Account(string name, int accountNO, double deposite)
+        {
+            HolderName = name;
+            AccountNo = accountNO;
+            Balance = deposite;
+
+        }
+        
+        
 
 
     }

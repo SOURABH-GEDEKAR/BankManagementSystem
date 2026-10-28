@@ -10,7 +10,7 @@ namespace BankManagemantSystem
 
             SavingAccount A = new SavingAccount();
 
-            
+
             A.HolderName = "sourabh";
             A.AccountNo = 89751;
             A.Deposite(500);

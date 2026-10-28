@@ -7,7 +7,19 @@ namespace BankManagementSystem
 {
     internal class CurrentAccount : Account
     {
-     
+
+        public CurrentAccount():base()
+        {
+
+        }
+
+        //Saving Account Constructor - here base()- call the parent comstructor
+        public CurrentAccount(string name, int accountNo, double deposite) : base(name, accountNo, deposite)
+        {
+            Console.WriteLine("Current Account Created");
+
+        }
+
         public  override void Deposite(double amount)
         {
             Balance = Balance + amount;
